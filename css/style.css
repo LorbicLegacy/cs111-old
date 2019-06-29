@@ -1,0 +1,307 @@
+/*all*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* html*/
+html {
+  scroll-behavior: smooth;
+}
+/*body*/
+body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.5)),url(../images/bodybg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* header elements star  */
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url(../images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+/*list*/
+ul{
+    margin-top: 25px;
+    list-style-type: none;
+    float: right;
+}
+ul li {
+    display: inline-block;
+   
+}
+ul li a{
+    text-decoration: none;
+    color: white; 
+    padding: 5px 20px;
+    border: .5px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgba(179, 172, 172, 0.808),rgba(0,0,0,1));
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.6s ease;
+}
+ul li.active a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: darkslategray;
+    background-color: white;
+    font-size: 20px;
+}
+ul li.active a:hover{
+    color: white;
+}
+
+/*logo image*/
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    transition: 0.6s ease;
+}
+.logo img:hover{
+    float: left;
+    transform: scale(1.3,1.2);
+    height: auto;
+    transition: 0.6s ease;
+}
+/*sidelogo*/
+.sidelogo{
+    position: fixed;
+    float: left;
+    top: 40%;
+    left: 5px;
+}
+.sidelogo img{
+    width: auto;
+    height: 100px;
+    transition: 0.6s ease;
+}
+.sidelogo img:hover{
+    float: left;
+    transform: scale(1.1,1.2);
+    height: 100px;
+    transition: 0.6s ease;
+}
+/* header element end */
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    font-size: 100px;
+    color: white;
+}
+.title h2{
+    border-top: 5px solid white;
+    padding-top: 10px;
+    color: white;
+    font-size: 27px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button #btn{
+    text-decoration: none;
+    color: white;
+    padding: 5px 25px;
+    font-size: 20px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+}
+.button #btn:hover{
+    text-decoration: none;
+    color: darkslategray;
+    background-color: white;
+    font-size: 25px;
+    transition: 0.6s ease;
+}
+.topbutton{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+.topbutton #btn{
+    text-decoration: none;
+    color: black;
+    padding: 2px 8px;
+    font-size: 20px;
+    background-color: white;
+    transition: 0.5s ease;
+}
+.topbutton #btn:hover{
+    text-decoration: none;
+    background: linear-gradient(rgba(179, 172, 172, 0.808),rgba(0,0,0,1));
+    color: white ;
+    border: 2px solid white;
+    font-size: 22px;
+    transition: 0.6s ease;
+}
+
+
+.aboutme{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 60%;
+    float: left;
+    min-height: 400px;
+}
+.aboutme h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 20px 0px;
+}
+.aboutme p{
+    
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    padding: 5px 10px;
+    line-height: 50px;
+}
+
+.aboutme-img .image{
+    max-block-size: 400px;
+    margin-top: 80px;
+}
+.skills{  
+    margin-top: 150px;
+    margin-left: 50px;
+    min-height: 600px;
+}
+.skills h1{
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 20px 0px;
+}
+.skills p{
+    max-width: 50%;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    padding: 5px 2px;
+}
+/*post*/
+.post-header{
+    background: none;
+    height: 150px;
+
+}
+.post-title{
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+.post-title h1{
+    padding: 5px 0px;
+    color: white;
+    font-size: 25px;
+}
+.post-title h2{
+    border-top: 3px dashed white;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+.post{
+    margin: 30px 10% ;
+    width: 90%;
+    height: auto;
+
+}
+.post-content{
+    clear: both;
+    background-color:rgba(29, 28, 28, 0.815);
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    position: relative;;
+    min-height: 500px;
+    float: left;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+.post-nav{
+    position: relative;
+    border: 1px solid white;
+    float: left;
+    padding: 10px;
+    width: 17%;
+    height: auto;
+    min-height: 200px;
+}
+
+.post-nav ul{
+    float: left;
+    display: block;
+}
+.post-nav ul li{
+ padding: 5px;
+}
+.post-nav ul li a{
+    font-size: 15px;
+padding: 2px;
+}
+.post-nav ul li a:hover{
+    font-size: 18px;
+}
+.post-content h1{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+.post-content p{
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+footer{
+    padding: 5px 0px;
+    border: 1px solid white;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 10px 0px;
+    clear:both;
+
+}
+.foot{
+    text-decoration: none;
+    clear:both;
+    margin-top: 10px;
+}
+.foot a{
+    padding: 5px;
+}
+.foot a:hover{
+    transform: scale(1.1,1.2);
+    transition: .5 ease;
+    background: linear-gradient(rgba(0,0,0,1),rgba(179, 172, 172, 0.808),rgba(0,0,0,1));
+
+}
